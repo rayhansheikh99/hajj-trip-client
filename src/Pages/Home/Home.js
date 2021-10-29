@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from '../Header/Slider/Slider';
 import Services from '../Services/Services';
+import Testimonials from '../Testimonials/Testimonials';
 import './home.css';
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
             }
         </div>
         </div>
+        <Testimonials/>
 
         </div>
     );
