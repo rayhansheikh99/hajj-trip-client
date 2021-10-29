@@ -1,0 +1,23 @@
+.details{
+    padding: 10%;
+}
+.details-card{
+    margin: 10% 20%;
+    border-radius: 25px;
+    background-color: rgb(247, 224, 247);
+}
+.btn-design{
+    background-image: linear-gradient(to right, rgb(192, 65, 154), rgba(173, 78, 211, 0.774));
+    border: none;
+}
+.btn-design:hover{
+    background-image: linear-gradient(to right, rgb(161, 43, 126), rgba(149, 61, 184, 0.774));
+    border: none;
+}
+@media only screen and (max-width: 640px){
+    .details-card{
+        margin: 10% 10%;
+        border-radius: 25px;
+    }
+   
+}
