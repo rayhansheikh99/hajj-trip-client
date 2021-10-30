@@ -26,7 +26,8 @@ const Menu = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
-      <Nav.Link as={Link} to="/orders">My Orders</Nav.Link>
+      {user?.email?<Nav.Link as={Link} to="/orders">My Orders</Nav.Link>: ('')}
+      {user?.email?<Nav.Link as={Link} to="/ordersmanage">Manage All Orders</Nav.Link>: ('')}
       <Nav.Link as={Link} to="/about">About Us</Nav.Link>
       <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
       

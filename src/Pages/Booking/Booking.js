@@ -56,7 +56,7 @@ const Booking = () => {
                 {errors.email && <span className="error">This field is required</span>}
                 <input placeholder="Package Name" defaultValue="" {...register("packageName",{ required: true })} />
                 <input placeholder="Address" defaultValue="" {...register("address",{ required: true })} />
-                <input placeholder="City" defaultValue="" {...register("city",{ required: true })} />
+                <input placeholder="Message" defaultValue="" {...register("message",{ required: true })} />
                 <input placeholder="phone number" defaultValue="" {...register("phone",{ required: true })} />
                 <Button type="submit" className='btn-book d-block'>Book Ticket</Button>
             </form>

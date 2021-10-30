@@ -18,3 +18,8 @@
     margin-left: 150px;
 
 }
+.icon-delete{
+    color: red;
+    cursor: pointer;
+    
+}

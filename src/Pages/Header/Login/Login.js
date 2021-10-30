@@ -32,16 +32,10 @@ const Login = () => {
   <Button className='px-5 btn-desing-all' type="submit">
     Login
   </Button><br/>
-  {/* <Button onClick={handleGoogleLogin} className='btn-desing-all px-5 mt-3'>
-    LogIn with Google
-  </Button> */}
   <p>or Login with</p>
   <h1 onClick={handleGoogleLogin} className='icon-google'>G</h1><br/>
   
   <Link to="/signup">Create a New Accoount</Link>
-  {/* <Button as={Link} to="/signup" className='mt-3 btn-desing-all px-5 ms-2' >
-    Create a New Account
-  </Button> */}
 </Form>
         </div>
     );
