@@ -17,6 +17,8 @@ import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import PackageDetails from './Pages/PackageDetails/PackageDetails';
 import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
+import Booking from './Pages/Booking/Booking';
+import Orders from './Pages/OrderList/Orders';
 
 
 function App() {
@@ -44,8 +46,14 @@ function App() {
          <Route path='/contact'>
             <Contact/>
          </Route>
-         <PrivateRoute exact path='/packagedetails/:serviceId'>
+         <Route path='/booking'>
+            <Booking/>
+         </Route>
+         <PrivateRoute exact path='/PackageDetails/:serviceId'>
             <PackageDetails/>
+         </PrivateRoute>
+         <PrivateRoute exact path='/orders'>
+            <Orders/>
          </PrivateRoute>
          <Route path='*'>
             <Error/>

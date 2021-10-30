@@ -1,10 +1,14 @@
 .details{
-    padding: 10%;
+    padding: 10% 0;
+    margin-left: 5%;
 }
 .details-card{
-    margin: 10% 20%;
+    margin: 0%;
     border-radius: 25px;
     background-color: rgb(247, 224, 247);
+}
+.design-body{
+    border-radius: 10% 10% 0 0;
 }
 .btn-design{
     background-image: linear-gradient(to right, rgb(192, 65, 154), rgba(173, 78, 211, 0.774));

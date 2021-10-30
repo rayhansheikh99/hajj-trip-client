@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Features from '../Features/Features';
 import Slider from '../Header/Slider/Slider';
 import Services from '../Services/Services';
 import Testimonials from '../Testimonials/Testimonials';
@@ -23,11 +24,12 @@ const Home = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-3 mt-3">
             
             {
-              services.map(service=> <Services key={service.id} service={service}/>)
+              services.map(service=> <Services key={service._id} service={service}/>)
             }
         </div>
         </div>
         <Testimonials/>
+        <Features/>
 
         </div>
     );

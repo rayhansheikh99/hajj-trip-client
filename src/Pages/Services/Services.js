@@ -5,7 +5,7 @@ import './services.css'
 
 const Services = (props) => {
 
-    const{_id, name, image, fee, describe}=props.service
+    const{_id, name, image, price, describe}=props.service
 
     return (
         <div>
@@ -15,7 +15,7 @@ const Services = (props) => {
                         <Card.Title>{name}</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem><b>Fee:</b> {fee}</ListGroupItem>
+                        <ListGroupItem><b>Price:</b> {price}</ListGroupItem>
                         <ListGroupItem>{describe.slice(0,130)}...</ListGroupItem>
                     </ListGroup>
                     <Card.Body>

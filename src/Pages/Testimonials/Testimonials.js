@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import './testmonials.css'
 
 const Testimonials = () => {
     return (
-        <div className='mb-5'>
-            <h2>Testimonials</h2>
+        <div className='mb-5 testimonial-size'>
+            <h2>Testimonials</h2><br/>
 
             <Row xs={1} md={3} className="g-4">
                 <Col>
@@ -12,7 +13,7 @@ const Testimonials = () => {
                     <Card.Body>
                     <Card.Title>Sakib Al Hasan</Card.Title>
                     <Card.Text>
-                    The service was over the top excellent. Masum bhai is incredibly knowledgeable about all aspects of traveling and instructions. My heartiest thanks to Masum bhai and the HAJJ TRIP, we have no regrets about our trip.
+                    The service was over the top excellent. Masum bhai is incredibly knowledgeable about all aspects of traveling and instructions. My heartiest thanks to Masum bhai and the HAJJ TRIP.
                     </Card.Text>
                     </Card.Body>
                 </Card>

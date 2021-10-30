@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Card,Button, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Card,Button, ListGroup, ListGroupItem, Col, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
+import Booking from '../Booking/Booking';
 import './packagedetails.css'
 
 const PackageDetails = () => {
+    // const{_id}=props.service
     // dynamic route 
     let {serviceId} = useParams()
     const [service, setService]= useState([])
@@ -24,20 +26,28 @@ const PackageDetails = () => {
    
     return (
         <div>
-            <Card className="card h-100 details-card details ">
+             <Row className="details-card details ">
+            <Col md={7} sm={12}>
+            <Card className="ms-5 design-body">
                     <Card.Img className="img-service d-block w-50 mx-auto" variant="top" src={singleService?.image} />
                     <Card.Body>
                         <Card.Title>{singleService?.name}</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem><b>Fee:</b> {singleService?.fee}</ListGroupItem>
+                        <ListGroupItem><b>Price:</b> {singleService?.price}</ListGroupItem>
                         <ListGroupItem>{singleService?.describe}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                  <Link to='/home'><Button className='px-5 btn-design'>Book Appoinment</Button></Link>
-                    
+                  {/* <Link to='/booking'><Button className='px-5 btn-design'>Book Ticket</Button></Link> */}
+                  {/* <Link to={`/Booking/${singleService?._id}`}><Button className='px-5 btn-design'>Package Details</Button></Link> */}
                     </Card.Body>
                 </Card>
+                </Col>
+            <Col md={5} sm={12}>
+            <Booking/>
+
+            </Col>
+            </Row>
                 
         </div>
     );
