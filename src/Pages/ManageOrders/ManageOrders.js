@@ -2,7 +2,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../Hooks/useAuth';
-import AllOrder from '../AllOrder/AllOrder';
+
 const ManageOrders = () => {
 
     const [orders, setOrders]=useState([])
@@ -41,10 +41,6 @@ const ManageOrders = () => {
             <div className='mb-5'><h2 className=''>All Booking List</h2></div>
             <div className='d-flex mt-2 order-list'>
             
-            {/* {
-              orders.map(order=> <AllOrder key={order._id} order={order}/>)
-              <FontAwesomeIcon onClick={()=>handleDeleteOrder(order._id)} className='ms-3 mt-1' icon={faTrash} />
-            } */}
              <ul>
                 {
                     orders.map(order => <li

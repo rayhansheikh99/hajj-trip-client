@@ -35,11 +35,10 @@ const PackageDetails = () => {
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         <ListGroupItem><b>Price:</b> {singleService?.price}</ListGroupItem>
+                        <ListGroupItem><b>Duration:</b> {singleService?.duration}</ListGroupItem>
                         <ListGroupItem>{singleService?.describe}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                  {/* <Link to='/booking'><Button className='px-5 btn-design'>Book Ticket</Button></Link> */}
-                  {/* <Link to={`/Booking/${singleService?._id}`}><Button className='px-5 btn-design'>Package Details</Button></Link> */}
                     </Card.Body>
                 </Card>
                 </Col>

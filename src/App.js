@@ -20,6 +20,7 @@ import PrivateRoute from './Pages/Header/Login/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking';
 import Orders from './Pages/OrderList/Orders';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
+import AddPackages from './Pages/AddPackages/AddPackages';
 
 
 function App() {
@@ -58,6 +59,9 @@ function App() {
          </PrivateRoute>
          <PrivateRoute exact path='/ordersmanage'>
             <ManageOrders/>
+         </PrivateRoute>
+         <PrivateRoute exact path='/addpackages'>
+            <AddPackages/>
          </PrivateRoute>
          <Route path='*'>
             <Error/>

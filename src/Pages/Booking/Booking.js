@@ -1,36 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-// import { useParams } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
-// import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
 import './booking.css';
 
 const Booking = () => {
-    // let {orderId} = useParams()
-    // const [service, setService]= useState([])
-    // const [singleService, setSingleService] = useState({});
-    // useEffect(()=>{
-    //     fetch('http://localhost:5000/services')
-    //     .then(res => res.json())
-    //     .then(data => setService(data))
-    // },[])
-
-    // //  data  fetch
-    // useEffect(()=>{
-    //     const foundService = service.find(
-    //         (services)=>services._id===orderId);
-    //     console.log(foundService);
-      
-    // },[service,orderId]);
-
-
+  
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
     const onSubmit = data => {
-        // const savedCart = singleService?._id;
-        // data.order = savedCart;
-        //         console.log(savedCart)
         fetch('https://shocking-werewolf-98267.herokuapp.com/orders', {
             method: 'POST',
             headers: {
