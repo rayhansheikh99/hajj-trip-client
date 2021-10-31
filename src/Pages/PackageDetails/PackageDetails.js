@@ -11,7 +11,7 @@ const PackageDetails = () => {
     const [service, setService]= useState([])
     const [singleService, setSingleService] = useState({});
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://shocking-werewolf-98267.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setService(data))
     },[])

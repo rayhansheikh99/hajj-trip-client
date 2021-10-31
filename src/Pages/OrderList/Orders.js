@@ -18,7 +18,7 @@ const Orders = () => {
     const [orders, setOrders]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://shocking-werewolf-98267.herokuapp.com/orders')
         .then(res=>res.json())
         .then(data=> setOrders(data))
 
@@ -29,7 +29,7 @@ const Orders = () => {
        const handleDeleteOrder = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://shocking-werewolf-98267.herokuapp.com/orders/${id}`
         fetch(url, {
             method:'DELETE'
         })

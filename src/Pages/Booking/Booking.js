@@ -31,7 +31,7 @@ const Booking = () => {
         // const savedCart = singleService?._id;
         // data.order = savedCart;
         //         console.log(savedCart)
-        fetch('http://localhost:5000/orders', {
+        fetch('https://shocking-werewolf-98267.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -10,7 +10,7 @@ const Home = () => {
     const [services, setServices]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://shocking-werewolf-98267.herokuapp.com/services')
         .then(res=>res.json())
         .then(data=> setServices(data))
 
