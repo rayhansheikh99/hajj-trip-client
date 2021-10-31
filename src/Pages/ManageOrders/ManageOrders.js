@@ -43,6 +43,7 @@ const ManageOrders = () => {
             
              <ul>
                 {
+                    //showing data here
                     orders.map(order => <li
                         key={order._id}
                         >Package Name: {order.packageName} E-mail: {order.email} Phone: {order.phone}

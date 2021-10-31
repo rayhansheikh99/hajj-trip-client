@@ -6,7 +6,7 @@ import logo from '../../../images/logo/travelLogo.png'
 import './menu.css'
 
 const Menu = () => {
-
+  // nav menu section 
   const {user, logOut} = useAuth();
     return (
         <div>

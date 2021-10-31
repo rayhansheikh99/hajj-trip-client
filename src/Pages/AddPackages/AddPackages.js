@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import './addpackage.css'
-// import useAuth from '../../Hooks/useAuth';
-
 
 const AddPackages = () => {
   
+    //useform use here and POST Method Apply
     const { register, handleSubmit, reset } = useForm();
-    // const { user } = useAuth();
     const onSubmit = data => {
         fetch('https://shocking-werewolf-98267.herokuapp.com/services', {
             method: 'POST',
@@ -21,7 +19,6 @@ const AddPackages = () => {
             .then(result => {
                 if (result.insertedId) {
                     alert('Package Added Successfully');
-                    // clearTheCart();
                     reset();
                 }
             })
@@ -30,10 +27,9 @@ const AddPackages = () => {
         <div className='details package-details'>
             <h4>Add Packages From Here</h4>
             <form className="booking-form package-form" onSubmit={handleSubmit(onSubmit)}>
-
+        
                 <input  placeholder="Package Name" defaultValue="" {...register("name",{ required: true })} />
                 <input  placeholder="Price" defaultValue="" {...register("price", { required: true })} />
-                {/* {errors.email && <span className="error">This field is required</span>} */}
                 <input placeholder="Duration Day" defaultValue="" {...register("duration",{ required: true })} />
                 <input placeholder="Description" defaultValue="" {...register("describe",{ required: true })} />
                 <input placeholder="Image Link" defaultValue="" {...register("image",{ required: true })} />

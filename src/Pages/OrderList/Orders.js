@@ -19,7 +19,7 @@ const Orders = () => {
 
     },[])
 
-       //delete an order
+       //delete an order and DELETE Method Apply Here
        const handleDeleteOrder = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){

@@ -5,6 +5,8 @@ import "./features.css"
 
 const Features = () => {
     return (
+
+        //feature section added here
         <div className="testimonial-size">
             <Row xs={1} md={2} className="g-4">
 

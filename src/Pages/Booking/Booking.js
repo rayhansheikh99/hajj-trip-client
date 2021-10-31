@@ -6,6 +6,7 @@ import './booking.css';
 
 const Booking = () => {
   
+    //useform use here and POST Method Apply here
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
     const onSubmit = data => {
@@ -20,7 +21,6 @@ const Booking = () => {
             .then(result => {
                 if (result.insertedId) {
                     alert('Order processed Successfully');
-                    // clearTheCart();
                     reset();
                 }
             })

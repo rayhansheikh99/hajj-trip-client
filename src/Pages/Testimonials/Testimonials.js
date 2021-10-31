@@ -4,6 +4,8 @@ import './testmonials.css'
 
 const Testimonials = () => {
     return (
+
+        //testimonial section
         <div className='mb-5 testimonial-size'>
             <h2>Testimonials</h2><br/>
 

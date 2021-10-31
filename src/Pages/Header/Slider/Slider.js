@@ -6,6 +6,7 @@ import slider3 from '../../../images/slider/slider-3.jpg'
 import './slider.css'
 
 const Slider = () => {
+    // home slider here
     return (
         <div>
             <Carousel className='mt-5' variant="dark">

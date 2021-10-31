@@ -3,7 +3,7 @@ import Services from '../Services/Services';
 import './packages.css'
 
 const Packages = () => {
-
+    // all package data section
     const [services, setServices]=useState([])
     // data fetch 
     useEffect(()=>{
