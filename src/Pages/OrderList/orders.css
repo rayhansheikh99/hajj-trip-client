@@ -23,3 +23,13 @@
     cursor: pointer;
     
 }
+@media only screen and (max-width: 640px){
+    .page-size-bg{
+        margin: 0%;
+        margin-top: 80px;
+        height: 100vh;
+        text-align: center;
+     
+    
+    }
+}

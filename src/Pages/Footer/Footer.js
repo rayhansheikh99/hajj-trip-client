@@ -42,7 +42,7 @@ const Footer = () => {
                 <ul>
                   
                   <Nav.Link className="footer-menu" as={Link} to="/home#home">Home</Nav.Link>
-                  <Nav.Link className="footer-menu" as={Link} to="/orders">My Orders</Nav.Link>
+                  <Nav.Link className="footer-menu" as={Link} to="/orders">My Booking</Nav.Link>
                   <Nav.Link className="footer-menu" as={Link} to="/about#about">About Us</Nav.Link>
                   <Nav.Link className="footer-menu" as={Link} to="/contact#contact">Contact Us</Nav.Link>
             

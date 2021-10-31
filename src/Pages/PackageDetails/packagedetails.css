@@ -9,6 +9,7 @@
 }
 .design-body{
     border-radius: 10% 10% 0 0;
+    margin-left: 10%;
 }
 .btn-design{
     background-image: linear-gradient(to right, rgb(192, 65, 154), rgba(173, 78, 211, 0.774));
@@ -23,5 +24,7 @@
         margin: 10% 10%;
         border-radius: 25px;
     }
-   
+   .design-body{
+       margin: 0;
+   }
 }

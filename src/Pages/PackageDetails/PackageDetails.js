@@ -27,9 +27,9 @@ const PackageDetails = () => {
     return (
         <div>
              <Row className="details-card details ">
-            <Col md={7} sm={12}>
-            <Card className="ms-5 design-body">
-                    <Card.Img className="img-service d-block w-50 mx-auto" variant="top" src={singleService?.image} />
+            <Col md={8} sm={12}>
+            <Card className="design-body">
+                    <Card.Img className="img-service d-block w-50 mx-auto mt-5" variant="top" src={singleService?.image} />
                     <Card.Body>
                         <Card.Title>{singleService?.name}</Card.Title>
                     </Card.Body>
@@ -42,7 +42,7 @@ const PackageDetails = () => {
                     </Card.Body>
                 </Card>
                 </Col>
-            <Col md={5} sm={12}>
+            <Col md={4} sm={12}>
             <Booking/>
 
             </Col>

@@ -21,6 +21,7 @@ import Booking from './Pages/Booking/Booking';
 import Orders from './Pages/OrderList/Orders';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
 import AddPackages from './Pages/AddPackages/AddPackages';
+import Packages from './Pages/Packages/Packages';
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
          </Route>
          <Route path='/home'>
             <Home/>
+         </Route>
+         <Route path='/packages'>
+            <Packages/>
          </Route>
          <Route path='/login'>
             <Login/>
