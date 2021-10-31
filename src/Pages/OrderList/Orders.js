@@ -6,15 +6,6 @@ import AllOrder from '../AllOrder/AllOrder';
 import './orders.css'
 const Orders = () => {
 
-    // const [orders, setOrders]=useState([])
-    // // data fetch 
-    // useEffect(()=>{
-    //     fetch('http://localhost:5000/orders')
-    //     .then(res=>res.json())
-    //     .then(data=> setOrders(data))
-
-
-    // },[])
     const [orders, setOrders]=useState([])
     // data fetch 
     useEffect(()=>{
